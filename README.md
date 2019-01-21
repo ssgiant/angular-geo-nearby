@@ -1,6 +1,8 @@
-geo-nearby [![License](https://img.shields.io/npm/l/geo-nearby.svg)](https://github.com/strikeentco/geo-nearby/blob/master/LICENSE)  [![npm](https://img.shields.io/npm/v/geo-nearby.svg)](https://www.npmjs.com/package/geo-nearby)
+angular-geo-nearby 
+
 ==========
-[![Build Status](https://travis-ci.org/strikeentco/geo-nearby.svg)](https://travis-ci.org/strikeentco/geo-nearby) [![node](https://img.shields.io/node/v/geo-nearby.svg)](https://www.npmjs.com/package/geo-nearby)  [![Test Coverage](https://codeclimate.com/github/strikeentco/geo-nearby/badges/coverage.svg)](https://codeclimate.com/github/strikeentco/geo-nearby/coverage) [![bitHound Score](https://www.bithound.io/github/strikeentco/geo-nearby/badges/score.svg)](https://www.bithound.io/github/strikeentco/geo-nearby)
+
+**Forked from strikeentco/geo-nearby for working with angulai-cli**
 
 **Note:** *This module stores all data in memory - remember that.*
 
@@ -11,11 +13,11 @@ Supports `Array`, `Object`, `JSON` and `GeoJSON` as input data.
 # Usage
 
 ```sh
-$ npm install geo-nearby --save
+$ npm install angular-geo-nearby --save
 ```
 
 ```javascript
-const Geo = require('geo-nearby');
+const Geo = require('angular-geo-nearby');
 
 const dataSet = [
   { i: 'Perth',     g: 3149853951719405 },
@@ -36,7 +38,7 @@ In `g` stored geohash with 52-bit precision.
 If you want to change property name, you can do that with options:
 
 ```javascript
-const Geo = require('geo-nearby');
+const Geo = require('angular-geo-nearby');
 
 const dataSet = [
   { id: 1, name: 'Perth',     geoHash: 3149853951719405 },
@@ -299,4 +301,3 @@ const dataSet = Geo.createCompactSet(data, { id: ['names', 'name', 'id'] });
 ## License
 
 The MIT License (MIT)<br/>
-Copyright (c) 2015-2016 Alexey Bystrov
