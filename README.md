@@ -2,7 +2,7 @@
 
 ==========
 
-**Forked from strikeentco/geo-nearby for working with angulai-cli**
+**Forked from strikeentco/geo-nearby for working with angular-cli**
 
 **Note:** *This module stores all data in memory - remember that.*
 
@@ -140,23 +140,6 @@ const geo = new Geo(data, { setOptions: { id: 'name', lat: 'lat', lon: 'lon' } }
 geo.nearBy(-33.87, 151.2, 5000);
 ```
 
-If you have a huge data it may be more wisely save them to file:
-
-```javascript
-const data = require('./huge.data.set.file.json');
-
-Geo.createCompactSet({ id: '_id', lat: 'lat', lon: 'lon', file: './compact.set.json' });
-```
-
-And then load in variable:
-
-```javascript
-const dataSet = require('./compact.set.json');
-const geo = new Geo(dataSet, { sorted: true });
-
-geo.nearBy(64.54, 40.54, 5000);
-```
-
 # Advanced usage
 
 ## Limiting results
@@ -244,7 +227,6 @@ Constructor.
     * **id** (*String|Array*) - Key (name|path) (by default = 2)
     * **lat** (*String|Array*) - Key (name|path) (by default = 0)
     * **lon** (*String|Array*) - Key (name|path) (by default = 1)
-    * **file** (*String*) - File path to save
 
 ```javascript
 const geo = new Geo(dataSet, { hash: 'geo', limit: 1, sorted: true });
@@ -292,7 +274,6 @@ Static method.
   * **id** (*String|Array*) - Key (name|path) (by default = 2)
   * **lat** (*String|Array*) - Key (name|path) (by default = 0)
   * **lon** (*String|Array*) - Key (name|path) (by default = 1)
-  * **file** (*String*) - File path to save
 
 ```javascript
 const dataSet = Geo.createCompactSet(data, { id: ['names', 'name', 'id'] });
