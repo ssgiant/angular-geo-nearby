@@ -1,7 +1,7 @@
 {
   "name": "angular-geo-nearby",
   "author": "Sankar A <ssmnster@gmail.com>",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Uber fast nearby locations search by coordinates. Supports GeoJSON.",
   "engines": {
     "node": ">=4.0.0"
